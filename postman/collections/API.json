@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "596cda28-ffb0-4b22-aeb9-0795bc340dee",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "18689881-596cda28-ffb0-4b22-aeb9-0795bc340dee"
+	},
+	"item": [
+		{
+			"name": "get all product",
+			"id": "fdd5e4ef-6dfe-49b5-9e19-0dfce5707d39",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "e35cfb7e-56f9-4899-80f0-11f9265b58ed",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "05a5bce0-2a03-4345-96bb-487d01b844db",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
