@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import  os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'products.apps.ProductsConfig'
 ]
 
 MIDDLEWARE = [
@@ -74,9 +77,13 @@ WSGI_APPLICATION = 'digital_products.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    'default':{
+        'HOST':'127.0.0.1',
+        'ENGINE':'django.db.backends.postgresql',
+        'NAME':'DIGITAL_PRODUCT_STORE',
+        'USER':'postgres',
+        'PASSWORD':'M4350666880@z',
+        'PORT':'5432'
     }
 }
 
@@ -118,6 +125,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Media Files
+MEDIA_ROOT = os.path.join(BASE_DIR,"media/")
+MEDIA_URL = '/media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
