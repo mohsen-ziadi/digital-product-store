@@ -5,3 +5,7 @@ djangorestframework==3.14.0
 # DataBase
 psycopg2==2.9.5
 
+# Photo
+Pillow==9.3.0
+
+
