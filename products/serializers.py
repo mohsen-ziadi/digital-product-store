@@ -4,12 +4,12 @@ from  .models import *
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = ('title', 'description' , 'avatar')
+        fields = ('id','title', 'description' , 'avatar')
 
 class FileSerializer(serializers.ModelSerializer):
     class Meta:
         model = File
-        fields = ('title','file')
+        fields = ('id','title','file')
 
 class ProductSerializer(serializers.ModelSerializer):
     categories = CategorySerializer(many=True)
@@ -17,4 +17,4 @@ class ProductSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Product
-        fields = ('title', 'description','avatar','categories','files')
+        fields = ('id','title', 'description','avatar','categories','files')
