@@ -7,19 +7,185 @@
 	},
 	"item": [
 		{
-			"name": "get all product",
-			"id": "fdd5e4ef-6dfe-49b5-9e19-0dfce5707d39",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": ""
+			"name": "Product",
+			"item": [
+				{
+					"name": "File",
+					"item": [
+						{
+							"name": "get all files of product",
+							"id": "01a7e37b-273a-48f1-81bd-133c074186b6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/product/1/files",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"product",
+										"1",
+										"files"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get all files of product by id",
+							"id": "b393bd02-1ae9-432b-a070-4673b3b6f5aa",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/product/1/files/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"product",
+										"1",
+										"files",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "6b7c322a-7472-488e-8d49-77fd0413f1a9"
+				},
+				{
+					"name": "get all product",
+					"id": "fdd5e4ef-6dfe-49b5-9e19-0dfce5707d39",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/product",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get image",
+					"id": "52daf29f-04eb-4e5e-a5d9-8e85a1779747",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/media/avatar/c16ac452-f0bd-4728-8d15-544d868aa0da.jpeg",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"media",
+								"avatar",
+								"c16ac452-f0bd-4728-8d15-544d868aa0da.jpeg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get product by id",
+					"id": "e0b04c7a-8111-411d-86a7-1aaca5b766ef",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/product/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			],
+			"id": "c231d61a-7acf-49e6-8828-df4bba291345"
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "get all category",
+					"id": "cc0ddb67-dad7-4bde-a6ea-6050758d9eea",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/category",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get category by id",
+					"id": "f6613d8e-2484-4e0f-b550-d5a8e70affa8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/category/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "0ad4a39a-df6d-43aa-b627-40ca103ff557"
 		}
 	],
 	"event": [
